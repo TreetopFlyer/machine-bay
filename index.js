@@ -1,1 +1,1 @@
-require('./server.js').listen(80);
+require('./server.js').listen(process.env.PORT || 80);
