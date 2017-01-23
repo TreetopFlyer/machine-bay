@@ -8,6 +8,7 @@ var should = chai.should();
 chai.use(chaiHTTP);
 
 describe("tests", function(){
+
     before(function(done){
         express = server.listen(7357);
         done();
@@ -16,9 +17,34 @@ describe("tests", function(){
         express.close();
         done();
     });
-    it("should pass", function(done){
-        var test = true;
-        test.should.equal(true);
-        done();
+
+    describe("API", function()
+    {
+        it("should provide a token with correct login", function(done)
+        {
+
+            done();
+        });
+        it("should let a user create an empty project", function(done)
+        {
+
+            done();
+        });
+        it("should let a user upload matricies to the project", function(done)
+        {
+
+            done();
+        });
+        it("should accept an empty request to a finished project and return a schema", function(done)
+        {
+
+            done();
+        });
+        it("should accept a CSV request to a finished project and return labels", function(done)
+        {
+
+            done();
+        });
     });
+
 });
