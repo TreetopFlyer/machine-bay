@@ -22,7 +22,8 @@ describe("tests", function(){
     {
         it("should provide a token with correct login", function(done)
         {
-
+            chai.request(server)
+            .post('/admin/user');
             done();
         });
         it("should let a user create an empty project", function(done)
